@@ -4,22 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>No Trace Cleaning Service | Saskatoon Cleaning Company</title>
-  <meta name="description" content="No Trace Cleaning Service provides residential, commercial, move-in, move-out, deep cleaning, new construction cleaning, interior and exterior window cleaning, yard cleanup and junk removal in Saskatoon and nearby areas.">
+  <meta name="description" content="No Trace Cleaning Service provides pre-possession, move-in, move-out, deep, new construction, office, commercial, interior and exterior window cleaning, yard cleanup and junk removal in Saskatoon and nearby areas.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="nav">
-  <div class="brand">
-    <img src="assets/no-trace-logo.jpg" alt="No Trace Cleaning Logo">
-    <div class="brand-text">No Trace<span>Cleaning Service</span></div>
-  </div>
+  <div class="logo">NO TRACE <span>Cleaning Service</span></div>
   <nav>
     <a href="#services">Services</a>
-    <a href="#quote">Free Quote</a>
+    <a href="#quote">Quote</a>
     <a href="#booking">Book</a>
     <a href="#contact">Contact</a>
   </nav>
-  <a class="phone" href="tel:3063713495">Call/Text</a>
+  <a class="phone" href="tel:3063713495">306-371-3495</a>
 </header>
 
 <section class="hero">
@@ -27,14 +24,14 @@
     <p class="tag">Saskatoon & Nearby Areas</p>
     <h1>We Leave No Trace — Only Spotless Spaces.</h1>
     <p>Professional cleaning for homes, businesses, realtors, builders, landlords and move-in/move-out clients.</p>
-    <a href="#booking" class="btn primary">Request Free Quote</a>
-    <a href="tel:3063713495" class="btn light">Call/Text 306-371-3495</a>
+    <a href="#booking" class="btn primary">Book a Cleaning</a>
+    <a href="#quote" class="btn light">Get Estimate</a>
   </div>
   <div class="hero-box">
-    <img src="assets/no-trace-logo.jpg" alt="No Trace Cleaning Logo">
-    <h3>Free Personalized Estimates</h3>
-    <p>Every home and business is different, so we provide free quotes based on your cleaning needs.</p>
-    <p><strong>Open:</strong> Monday – Sunday<br>7:00 AM – 11:00 PM</p>
+    <h3>Open 7 Days</h3>
+    <p>Monday – Sunday<br><strong>7:00 AM – 11:00 PM</strong></p>
+    <p>Call or text anytime for a free quote.</p>
+    <a href="mailto:notracecleaningservice@gmail.com">notracecleaningservice@gmail.com</a>
   </div>
 </section>
 
@@ -42,16 +39,14 @@
   <p class="small-title">Our Services</p>
   <h2>Cleaning services for every property need</h2>
   <div class="service-grid">
-    <div class="card"><h3>Residential Cleaning</h3><p>Reliable home cleaning for busy families, homeowners and renters.</p></div>
-    <div class="card"><h3>Commercial Cleaning</h3><p>Professional cleaning for offices, clinics, shops and business spaces.</p></div>
     <div class="card"><h3>Pre-Possession Cleaning</h3><p>Detailed cleaning before buyers receive keys or before property handover.</p></div>
     <div class="card"><h3>Move-In Cleaning</h3><p>Fresh, detailed home cleaning before you move into your new space.</p></div>
     <div class="card"><h3>Move-Out Cleaning</h3><p>Full cleaning for tenants, landlords, sellers and property managers.</p></div>
     <div class="card"><h3>New Construction Cleaning</h3><p>Dust removal, final polish and detailed post-construction cleaning.</p></div>
     <div class="card"><h3>Deep Cleaning</h3><p>Baseboards, kitchens, bathrooms, appliances, trims, doors and detailed surfaces.</p></div>
-    <div class="card"><h3>Interior & Exterior Window Cleaning</h3><p>Interior glass, exterior glass, tracks, sills, frames and screen cleaning.</p></div>
-    <div class="card"><h3>Yard Cleanup</h3><p>Outdoor cleanup support for yards, garages and property cleanups.</p></div>
-    <div class="card"><h3>Junk Removal</h3><p>Light junk removal and cleanup support available by quote.</p></div>
+    <div class="card"><h3>Interior & Exterior Window Cleaning</h3><p>Interior glass, exterior glass, tracks, sills, frames and screen cleaning for homes and businesses.</p></div>
+    <div class="card"><h3>Office & Commercial Cleaning</h3><p>Reliable cleaning for offices, clinics, shops and commercial spaces.</p></div>
+    <div class="card"><h3>Yard Cleanup & Junk Removal</h3><p>Extra cleanup support for yards, garages, move-outs and property cleanups.</p></div>
   </div>
 </section>
 
@@ -72,16 +67,38 @@
 </section>
 
 <section id="quote" class="section quote">
-  <p class="small-title">Free Estimate</p>
-  <h2>Get a FREE Cleaning Quote</h2>
-  <p class="note">No fixed prices listed. Every property is different, so we provide a personalized estimate based on size, condition and service type.</p>
-  <div class="quote-box">
-    <h3>Request your free quote today</h3>
-    <p>Tell us what service you need, your property size, preferred date and any special details. We will contact you with a personalized estimate.</p>
-    <div class="quote-services">
-      <span>Residential</span><span>Commercial</span><span>Move-In/Move-Out</span><span>Deep Cleaning</span><span>Post-Construction</span><span>Interior Windows</span><span>Exterior Windows</span><span>Yard Cleanup</span><span>Junk Removal</span>
+  <p class="small-title">Quick Estimate</p>
+  <h2>Instant Cleaning Estimate</h2>
+  <p class="note">This is only an estimate. Final price depends on property size, condition and requested service.</p>
+  <div class="calculator">
+    <label>Service Type</label>
+    <select id="service">
+      <option value="180">Basic / Regular Cleaning</option>
+      <option value="280">Deep Cleaning</option>
+      <option value="320">Move-In / Move-Out Cleaning</option>
+      <option value="380">Pre-Possession Cleaning</option>
+      <option value="450">New Construction Cleaning</option>
+      <option value="200">Interior Window Cleaning</option>
+      <option value="300">Exterior Window Cleaning</option>
+      <option value="420">Interior & Exterior Window Cleaning</option>
+      <option value="250">Office / Commercial Cleaning</option>
+      <option value="300">Yard Cleanup / Junk Removal</option>
+    </select>
+    <label>Bedrooms / Rooms</label>
+    <input id="rooms" type="number" value="3" min="0">
+    <label>Bathrooms</label>
+    <input id="baths" type="number" value="2" min="0">
+    <label>Extras</label>
+    <div class="extras">
+      <label><input type="checkbox" class="extra" value="60"> Inside oven</label>
+      <label><input type="checkbox" class="extra" value="50"> Inside fridge</label>
+      <label><input type="checkbox" class="extra" value="80"> Cabinets inside</label>
+      <label><input type="checkbox" class="extra" value="75"> Window tracks/sills</label>
+      <label><input type="checkbox" class="extra" value="90"> Screen cleaning</label>
+      <label><input type="checkbox" class="extra" value="100"> Heavy dust</label>
     </div>
-    <a class="btn primary" href="#booking">Get My Free Quote</a>
+    <button onclick="calculateQuote()" type="button">Calculate Estimate</button>
+    <div id="result" class="result">Estimated total: $0</div>
   </div>
 </section>
 
@@ -102,8 +119,6 @@
     <label>Service Needed</label>
     <select name="Service Needed" required>
       <option value="">Select service</option>
-      <option>Residential Cleaning</option>
-      <option>Commercial Cleaning</option>
       <option>Pre-Possession Cleaning</option>
       <option>Move-In Cleaning</option>
       <option>Move-Out Cleaning</option>
@@ -112,13 +127,13 @@
       <option>Interior Window Cleaning</option>
       <option>Exterior Window Cleaning</option>
       <option>Interior & Exterior Window Cleaning</option>
-      <option>Yard Cleanup</option>
-      <option>Junk Removal</option>
+      <option>Office / Commercial Cleaning</option>
+      <option>Yard Cleanup / Junk Removal</option>
     </select>
     <label>Property Size</label><input name="Property Size" placeholder="Example: 3 bed, 2 bath, 1800 sq ft">
     <label>Message / Special Instructions</label>
     <textarea name="Message" rows="5" placeholder="Tell us about pets, parking, keys, deadline, windows, screens, tracks, construction dust, etc."></textarea>
-    <button type="submit">Send Free Quote Request</button>
+    <button type="submit">Send Booking Request</button>
   </form>
 </section>
 
