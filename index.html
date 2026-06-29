@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Trace Cleaning Service | Saskatoon Cleaning Company</title>
+  <meta name="description" content="No Trace Cleaning Service provides pre-possession, move-in, move-out, deep, new construction, office, commercial, interior and exterior window cleaning, yard cleanup and junk removal in Saskatoon and nearby areas.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="logo">NO TRACE <span>Cleaning Service</span></div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#quote">Quote</a>
+    <a href="#booking">Book</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="phone" href="tel:3063713495">306-371-3495</a>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="tag">Saskatoon & Nearby Areas</p>
+    <h1>We Leave No Trace — Only Spotless Spaces.</h1>
+    <p>Professional cleaning for homes, businesses, realtors, builders, landlords and move-in/move-out clients.</p>
+    <a href="#booking" class="btn primary">Book a Cleaning</a>
+    <a href="#quote" class="btn light">Get Estimate</a>
+  </div>
+  <div class="hero-box">
+    <h3>Open 7 Days</h3>
+    <p>Monday – Sunday<br><strong>7:00 AM – 11:00 PM</strong></p>
+    <p>Call or text anytime for a free quote.</p>
+    <a href="mailto:notracecleaningservice@gmail.com">notracecleaningservice@gmail.com</a>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <p class="small-title">Our Services</p>
+  <h2>Cleaning services for every property need</h2>
+  <div class="service-grid">
+    <div class="card"><h3>Pre-Possession Cleaning</h3><p>Detailed cleaning before buyers receive keys or before property handover.</p></div>
+    <div class="card"><h3>Move-In Cleaning</h3><p>Fresh, detailed home cleaning before you move into your new space.</p></div>
+    <div class="card"><h3>Move-Out Cleaning</h3><p>Full cleaning for tenants, landlords, sellers and property managers.</p></div>
+    <div class="card"><h3>New Construction Cleaning</h3><p>Dust removal, final polish and detailed post-construction cleaning.</p></div>
+    <div class="card"><h3>Deep Cleaning</h3><p>Baseboards, kitchens, bathrooms, appliances, trims, doors and detailed surfaces.</p></div>
+    <div class="card"><h3>Interior & Exterior Window Cleaning</h3><p>Interior glass, exterior glass, tracks, sills, frames and screen cleaning for homes and businesses.</p></div>
+    <div class="card"><h3>Office & Commercial Cleaning</h3><p>Reliable cleaning for offices, clinics, shops and commercial spaces.</p></div>
+    <div class="card"><h3>Yard Cleanup & Junk Removal</h3><p>Extra cleanup support for yards, garages, move-outs and property cleanups.</p></div>
+  </div>
+</section>
+
+<section class="section why">
+  <div>
+    <p class="small-title">Why Choose Us</p>
+    <h2>Reliable. Detailed. Local.</h2>
+    <p>No Trace Cleaning Service is focused on making your space look fresh, spotless and ready to enjoy.</p>
+  </div>
+  <div class="checklist">
+    <p>✅ Free quotes available</p>
+    <p>✅ Call, text or email booking</p>
+    <p>✅ Residential and commercial cleaning</p>
+    <p>✅ Flexible schedule: 7 days a week</p>
+    <p>✅ Great for possession day and moving deadlines</p>
+    <p>✅ Interior & exterior window cleaning available</p>
+  </div>
+</section>
+
+<section id="quote" class="section quote">
+  <p class="small-title">Quick Estimate</p>
+  <h2>Instant Cleaning Estimate</h2>
+  <p class="note">This is only an estimate. Final price depends on property size, condition and requested service.</p>
+  <div class="calculator">
+    <label>Service Type</label>
+    <select id="service">
+      <option value="180">Basic / Regular Cleaning</option>
+      <option value="280">Deep Cleaning</option>
+      <option value="320">Move-In / Move-Out Cleaning</option>
+      <option value="380">Pre-Possession Cleaning</option>
+      <option value="450">New Construction Cleaning</option>
+      <option value="200">Interior Window Cleaning</option>
+      <option value="300">Exterior Window Cleaning</option>
+      <option value="420">Interior & Exterior Window Cleaning</option>
+      <option value="250">Office / Commercial Cleaning</option>
+      <option value="300">Yard Cleanup / Junk Removal</option>
+    </select>
+    <label>Bedrooms / Rooms</label>
+    <input id="rooms" type="number" value="3" min="0">
+    <label>Bathrooms</label>
+    <input id="baths" type="number" value="2" min="0">
+    <label>Extras</label>
+    <div class="extras">
+      <label><input type="checkbox" class="extra" value="60"> Inside oven</label>
+      <label><input type="checkbox" class="extra" value="50"> Inside fridge</label>
+      <label><input type="checkbox" class="extra" value="80"> Cabinets inside</label>
+      <label><input type="checkbox" class="extra" value="75"> Window tracks/sills</label>
+      <label><input type="checkbox" class="extra" value="90"> Screen cleaning</label>
+      <label><input type="checkbox" class="extra" value="100"> Heavy dust</label>
+    </div>
+    <button onclick="calculateQuote()" type="button">Calculate Estimate</button>
+    <div id="result" class="result">Estimated total: $0</div>
+  </div>
+</section>
+
+<section id="booking" class="section booking">
+  <p class="small-title">Book Online</p>
+  <h2>Request a Cleaning Appointment</h2>
+  <form action="mailto:notracecleaningservice@gmail.com" method="post" enctype="text/plain">
+    <div class="two">
+      <div><label>Full Name</label><input name="Full Name" required></div>
+      <div><label>Phone Number</label><input name="Phone Number" required></div>
+    </div>
+    <label>Email</label><input type="email" name="Email">
+    <label>Property Address / Area</label><input name="Address or Area" required>
+    <div class="two">
+      <div><label>Preferred Date</label><input type="date" name="Preferred Date"></div>
+      <div><label>Preferred Time</label><input type="time" name="Preferred Time"></div>
+    </div>
+    <label>Service Needed</label>
+    <select name="Service Needed" required>
+      <option value="">Select service</option>
+      <option>Pre-Possession Cleaning</option>
+      <option>Move-In Cleaning</option>
+      <option>Move-Out Cleaning</option>
+      <option>New Construction Cleaning</option>
+      <option>Deep Cleaning</option>
+      <option>Interior Window Cleaning</option>
+      <option>Exterior Window Cleaning</option>
+      <option>Interior & Exterior Window Cleaning</option>
+      <option>Office / Commercial Cleaning</option>
+      <option>Yard Cleanup / Junk Removal</option>
+    </select>
+    <label>Property Size</label><input name="Property Size" placeholder="Example: 3 bed, 2 bath, 1800 sq ft">
+    <label>Message / Special Instructions</label>
+    <textarea name="Message" rows="5" placeholder="Tell us about pets, parking, keys, deadline, windows, screens, tracks, construction dust, etc."></textarea>
+    <button type="submit">Send Booking Request</button>
+  </form>
+</section>
+
+<section class="section gallery">
+  <p class="small-title">Gallery</p>
+  <h2>Before & After Photos</h2>
+  <p class="note">Add your real cleaning photos here later.</p>
+  <div class="photo-grid">
+    <div>Kitchen</div><div>Bathroom</div><div>Interior Windows</div><div>Exterior Windows</div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Contact No Trace Cleaning Service</h2>
+  <p><strong>Call/Text:</strong> <a href="tel:3063713495">306-371-3495</a></p>
+  <p><strong>Email:</strong> <a href="mailto:notracecleaningservice@gmail.com">notracecleaningservice@gmail.com</a></p>
+  <p><strong>Service Area:</strong> Saskatoon, Warman, Martensville and nearby areas</p>
+  <p><strong>Hours:</strong> Monday – Sunday, 7:00 AM – 11:00 PM</p>
+</section>
+
+<footer><p>© 2026 No Trace Pre-Possession Cleaning Service Corporation. All rights reserved.</p></footer>
+<a class="float-call" href="tel:3063713495">Call/Text</a>
+<script src="script.js"></script>
+</body>
+</html>
